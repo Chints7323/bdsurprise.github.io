@@ -1,0 +1,796 @@
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<title>2nd Page</title>
+
+
+
+
+<style type="text/css">
+
+
+.slide2{
+background-image: url("http://www.zingerbugimages.com/backgrounds/red_starry_sky_glitter_background_seamless.gif");
+
+}
+.aa{
+position: relative;
+}
+.slide_img{
+
+    position: absolute;
+    opacity: 0.5;
+}
+
+.crop1{
+
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner{
+
+  height: 59%;
+
+}
+.crop2{
+  position: relative;
+  top: -125px;
+  width: 45%;
+  margin-left: 27%;
+  opacity: 1;
+}
+.icon1{
+height: 75px;
+width:75px;
+margin-left:71%;
+margin-top: 30px;
+border: 3px ;
+border-style: solid;
+border-color: #A9A9A9;
+background-color: #fff;
+}
+.icon{
+  height: 75px;
+  width:75px;
+  margin-top: 30px;
+  margin-left: 9%;
+  border: 3px ;
+  border-style:solid;
+  border-color:  #A9A9A9;
+  background-color: #fff;
+}
+
+
+
+
+.lower{
+
+    position: relative;
+    z-index: 1;
+}
+
+.background{
+    color: black;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#wrapper{
+
+  margin-top: 0;
+  margin-bottom: 0;
+  height: calc(100% - 72%);
+  position: relative;
+}
+
+
+.bt1{
+margin-top: 0px;
+margin-left: 9%;
+color: #000;
+background-color:#fff;
+}
+
+.bt1:hover{
+  color: #fff;
+  background-color:#000;
+}
+
+.bt2{
+  border:1.75px solid black;
+  border-radius:14%;
+  margin-top: 15px;
+  margin-left: 71.3%;
+  color: #000;
+  background-color:#fff;
+}
+.bt2:hover{
+  color: #fff;
+  background-color:#000;
+
+}
+
+
+.btn-xs{
+font-size: 10px;
+width: 72px;
+height: 20px;
+}
+
+
+.header{
+  padding-right: 0;
+  padding-left: 0;
+}
+.body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+/* The action list is optional. */
+.tweetEntry-action-list {
+  display: block;
+  line-height: 18px;
+  margin-left: 58px;
+  margin-top: 10px;
+  color: #292f33;
+}
+.fa-reply:hover {
+  color: #292f33;
+}
+.fa-retweet:hover {
+  color: #5cd65c;
+}
+.fa-heart:hover {
+  color: #ff3333;
+}
+/************************/
+
+.tweetEntry {
+  border-bottom: 1px solid #e1e8ed;
+  cursor: pointer;
+  min-height: 51px;
+  padding: 9px 12px;
+}
+.tweetEntry-content {
+  display: block;
+  font-size: 14px;
+  margin-left: 58px;
+  font-size: 14px;
+}
+.tweetEntry-account-group {
+  color: #8899a6;
+  padding: 0px;
+  text-decoration: none;
+  line-height: 20px;
+}
+.tweetEntry-avatar {
+  float: left;
+  height: 48px;
+  width: 48px;
+  margin-left: -58px;
+  border-radius: 5px;
+}
+.tweetEntry-fullname {
+  font-weight: bold;
+  font-size: 14px;
+  color: #292f33;
+  padding: 0px;
+}
+.tweetEntry-username {
+  font-weight: bold;
+  font-size: 14px;
+  color: #b1bbc3;
+  padding: 0px;
+}
+.tweetEntry-timestamp {
+  font-size: 14px;
+  color: #b1bbc3;
+  padding: 0px;
+}
+.tweetEntry-text-container {
+  font-size: 14px;
+  color: #292f33;
+  line-height: 18px;
+}
+
+.optionalMedia {
+  margin-left: 58px;
+  margin-top: 10px;
+}
+.optionalMedia-img {
+  border-radius: 5px;
+  max-width: 506px;
+  max-height: 506px;
+
+}
+
+.letter {
+  text-transform: uppercase;
+}
+
+.balloon {
+  width: 700px;
+  margin-left: 52%;
+
+  padding-top: 30px;
+  position: relative;
+}
+.balloon > div {
+   width:84px;
+  height:97px;
+  background: #b60f61;
+  border-radius:0;
+  border-radius:80% 80% 80% 80%;
+  margin: 0 auto;
+  position: absolute;
+  padding:10px;
+  box-shadow:inset 17px 7px 10px #b60f61;
+  opacity:0.8;
+  -webkit-transform-origin: bottom center;
+}
+.balloon > div:nth-child(1){
+  background: #b60f61;
+  left: 0;
+  box-shadow:inset 10px 10px 10px darken(#b60f61, 10%);
+  -webkit-animation:balloon1 6s ease-in-out infinite;
+  -moz-animation:balloon1 6s ease-in-out infinite;
+  -o-animation:balloon1 6s ease-in-out infinite;
+  animation:balloon1 6s ease-in-out infinite;
+  &:before {
+   color: #b60f61;
+  }
+
+}
+.balloon > div:nth-child(2){
+  background: #f2702d;
+  left: 100px;
+  box-shadow:inset 10px 10px 10px darken(#f2702d, 10%);
+   -webkit-animation:balloon2 6s ease-in-out infinite;
+  -moz-animation:balloon2 6s ease-in-out infinite;
+  -o-animation:balloon2 6s ease-in-out infinite;
+  animation:balloon2 6s ease-in-out infinite;
+  &:before {
+   color: #f2702d ;
+  }
+
+}
+.balloon > div:nth-child(3){
+  background: 	#2db5a7;
+  left: 200px;
+  box-shadow:inset 10px 10px 10px darken(	#2db5a7, 10%);
+   -webkit-animation:balloon4 6s ease-in-out infinite;
+  -moz-animation:balloon4 6s ease-in-out infinite;
+  -o-animation:balloon4 6s ease-in-out infinite;
+  animation:balloon4 6s ease-in-out infinite;
+  &:before {
+   color: 	#2db5a7 ;
+  }
+
+}
+.balloon > div:nth-child(4){
+  background: 	#be3df4;
+  left: 310px;
+  box-shadow:inset 10px 10px 10px darken(	#be3df4, 10%);
+   -webkit-animation:balloon1 5s ease-in-out infinite;
+  -moz-animation:balloon1 5s ease-in-out infinite;
+  -o-animation:balloon1 5s ease-in-out infinite;
+  animation:balloon1 5s ease-in-out infinite;
+  &:before {
+   color: 	#be3df4 ;
+  }
+
+}
+.balloon > div:nth-child(5){
+  background: 	#b4e043;
+  left: 440px;
+  box-shadow:inset 10px 10px 10px darken(	#b4e043, 10%);
+   -webkit-animation:balloon3 5s ease-in-out infinite;
+  -moz-animation:balloon3 5s ease-in-out infinite;
+  -o-animation:balloon3 5s ease-in-out infinite;
+  animation:balloon3 5s ease-in-out infinite;
+  &:before {
+   color: 	#b4e043 ;
+  }
+
+}
+.balloon > div:nth-child(6){
+  background: 	#f2c23a;
+  left: 530px;
+  box-shadow:inset 10px 10px 10px darken(	#f2c23a, 10%);
+  -webkit-animation:balloon2 3s ease-in-out infinite;
+  -moz-animation:balloon2 3s ease-in-out infinite;
+  -o-animation:balloon2 3s ease-in-out infinite;
+  animation:balloon2 3s ease-in-out infinite;
+  &:before {
+   color: 	#f2c23a;
+  }
+
+}
+.balloon > div:before {
+  color:#b60f61;
+  position:absolute;
+  bottom:-20px;
+  left: 34px;
+  content:"▲";
+  font-size:0.5em;
+}
+
+.letter {
+  font-size: 2.7em;
+  color: white;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  margin-left: -27px;
+}
+
+/*BALLOON 1 4*/
+@-webkit-keyframes balloon1 {
+  0%,100%{ -webkit-transform:translateY(0) rotate(-6deg);}
+  50%{ -webkit-transform:translateY(-20px) rotate(8deg); }
+}
+@-moz-keyframes balloon1 {
+  0%,100%{ -moz-transform:translateY(0) rotate(-6deg);}
+  50%{ -moz-transform:translateY(-20px) rotate(8deg); }
+}
+@-o-keyframes balloon1 {
+  0%,100%{ -o-transform:translateY(0) rotate(-6deg);}
+  50%{ -o-transform:translateY(-20px) rotate(8deg); }
+}
+@keyframes balloon1 {
+  0%,100%{ transform:translateY(0) rotate(-6deg);}
+  50%{ transform:translateY(-20px) rotate(8deg); }
+}
+
+/* BAllOON 2 5*/
+@-webkit-keyframes balloon2 {
+  0%,100%{ -webkit-transform:translateY(0) rotate(6eg);}
+  50%{ -webkit-transform:translateY(-30px) rotate(-8deg); }
+}
+@-moz-keyframes balloon2 {
+  0%,100%{ -moz-transform:translateY(0) rotate(6deg);}
+  50%{ -moz-transform:translateY(-30px) rotate(-8deg); }
+}
+@-o-keyframes balloon2 {
+  0%,100%{ -o-transform:translateY(0) rotate(6deg);}
+  50%{ -o-transform:translateY(-30px) rotate(-8deg); }
+}
+@keyframes balloon2 {
+  0%,100%{ transform:translateY(0) rotate(6deg);}
+  50%{ transform:translateY(-30px) rotate(-8deg); }
+}
+
+
+/* BAllOON 0*/
+@-webkit-keyframes balloon3 {
+  0%,100%{ -webkit-transform:translate(0, -10px) rotate(6eg);}
+  50%{ -webkit-transform:translate(-20px, 30px) rotate(-8deg); }
+}
+@-moz-keyframes balloon3 {
+ 0%,100%{ -moz-transform:translate(0, -10px) rotate(6eg);}
+  50%{ -moz-transform:translate(-20px, 30px) rotate(-8deg); }
+}
+@-o-keyframes balloon3 {
+ 0%,100%{ -o-transform:translate(0, -10px) rotate(6eg);}
+  50%{ -o-transform:translate(-20px, 30px) rotate(-8deg); }
+}
+@keyframes balloon3 {
+ 0%,100%{ transform:translate(0, -10px) rotate(6eg);}
+  50%{ transform:translate(-20px, 30px) rotate(-8deg); }
+}
+
+/* BAllOON 3*/
+@-webkit-keyframes balloon4 {
+  0%,100%{ -webkit-transform:translate(10px, -10px) rotate(-8eg);}
+  50%{ -webkit-transform:translate(-15px, 20px) rotate(10deg); }
+}
+@-moz-keyframes balloon4 {
+  0%,100%{ -moz-transform:translate(10px, -10px) rotate(-8eg);}
+  50%{ -moz-transform:translate(-15px, 10px) rotate(10deg); }
+}
+@-o-keyframes balloon4 {
+  0%,100%{ -o-transform:translate(10px, -10px) rotate(-8eg);}
+  50%{ -o-transform:translate(-15px, 10px) rotate(10deg); }
+}
+@keyframes balloon4 {
+  0%,100%{ transform:translate(10px, -10px) rotate(-8eg);}
+  50%{ transform:translate(-15px, 10px) rotate(10deg); }
+}
+
+.example_b{
+width: 90px;
+height: 30px;
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #5AA3D1;
+display: inline-block;
+border: none;
+border-radius: 4px;
+transition: all 0.4s ease 0s;
+
+}
+
+.example_b:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+.btn{
+
+font-size: 10px;
+width: 72px;
+height: 20px;
+padding: 1px;
+border: 1.75px solid black;
+}
+</style>
+
+</head>
+<body>
+
+  <div class="container-fluid header">
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false" >
+
+    <ol class="carousel-indicators"  >
+
+      <li data-target="#carouselExampleCaptions" data-slide-to="0"   class="active" ></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1" ></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"  ></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item slide1 active"  >
+        <img src="slide2.png" class="crop1 d-block ">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="font-family:Glass Antiqua; font-size:190%;">Shuboh Jonmoh Din !!!</h2>
+        </div>
+      </div>
+      <div class="carousel-item slide2 "  >
+        <img src="gallery/c/13g.jpg" class="crop2 d-block    " >
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item slide3 aa" >
+       <img class="  slide_img" src="slide3.jpg"  width="100%" class="crop3 d-block " >
+        <div class="carousel-caption d-none d-md-block" style=" color:black; font-family: 'Sriracha', cursive; font-size:21px;font-weight:600;; padding-top:35px; position: relative; z-index: 2;" >
+            <p style="margin-left:-410px;">Mile toh hum 2nd year mei the par abhi toh aur lamba chalna hei<br>
+            Teri 1st impression toh as a Nerd thi par tere apne hi kuch rangg he aur Voh teri ek saal pehle ki pic toh pura blank kardi thi...<br><br>
+            Class mei baate karke bhi cse top karna aur bina social media itta social hona koi tujse sikhe...<br>
+            Kher topper wali baat rehne dete hei par kisi aur ko ek baari chance dey diya karo
+            <br><br>
+            Voh practicals mei tere bina toh fail hin tha <br>
+            Aur concepts tere bina saare aadhure the <br>
+            Jaisi bhi ho achi ho ... Bohot chize hei bohot baata chuka hu baaki ka phir kabhi !!</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+
+<div style="height: 13%; width:100%; border:1px solid red; text-align:center; background-color:#AADBD9;" >
+  <p>HAPPY 20<sup>th</sup> BIRTHDAY</p>
+
+
+  <script type="text/javascript">
+
+
+  <!--For Audio-->
+  function play() {
+     var audio = document.getElementById("audio");
+
+       audio.paused? audio.play() : audio.pause();
+   }
+
+
+
+
+
+      </script>
+
+      <button type="button" class="example_b" onclick="play()" style="margin-bottom: 10px;">CLick  Me</button>
+          <audio id="audio" src="b_song.mpeg"></audio>
+</div>
+
+<div id="wrapper">
+
+  <div class="lower" >
+    <img src="icon1.png" class="icon rounded-circle "  >
+      <img src="icons.png" class="icon1 rounded-circle " >
+
+      <br>
+
+          <!--<button type="button"  class="bt1  btn-xs"  >PHOTOS</button> -->
+          <!--<div class="bt1  btn-xs" ><a href="gallery/index.html" style="color:#fff;"><span>PHOTOS</span></a></div>-->
+		  <a href="gallery/index.html" class="btn  bt1" role="button"><span>PHOTOS</span></a>
+          <button type="button"  class="bt2  btn-xs" data-toggle="modal" data-target="#staticBackdrop" >TWEETS</button>
+
+
+  </div>
+
+
+
+  <div class="background">
+    <div class="balloon">
+      <div class="letter">🥳</div>
+      <div class="letter">🎂</div>
+      <div class="letter">🌬️</div>
+      <div class="letter">🎉</div>
+      <div class="letter">🍰</div>
+      <div class="letter">🍻</div>
+    </div>
+  </div>
+</div>
+  <!--start of tweet div-->
+          <div class=" modal fade tweetEntry-tweetHolder" id="staticBackdrop"  data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+            <div class="modal-dialog   ">
+                <div class="modal-content">
+          <div>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+            <h1 class="tweetEntry" style="margin-bottom:0px; font-family:Chewy;">BIRTHDAY &nbsp;TWEETS.</h1>
+          </div>
+          <!---------------------------------------->
+
+          <!-- Entry with Media turned on. -->
+		  <!-- 1st chintan -->
+          <div class="tweetEntry">
+
+            <div class="tweetEntry-content">
+
+              <a class="tweetEntry-account-group" href="[accountURL]">
+
+                <img class="tweetEntry-avatar" src="chint_dp.jpg">
+
+                <strong class="tweetEntry-fullname">
+                Chintan Patel
+                </strong>
+
+                <span class="tweetEntry-username">
+                  @<b>chints_7323</b>
+                </span>
+
+                <span class="tweetEntry-timestamp">- 7:07 PM</span>
+
+              </a>
+
+              <div class="tweetEntry-text-container">
+
+               Wish you a very happy 20th Birthday TO very intelligent and emotional person !!
+			   <br>
+			   oh sorry did i say "to" ?? I mean "From".
+          <br>
+         Toh ji kesa laaga  surprise???
+         <br>
+         😜🙊
+              </div>
+
+            </div>
+
+
+
+            <div class="tweetEntry-action-list" style="line-height:24px;color: #b1bbc3;">
+              <i class="fa fa-reply" style="width: 80px;"></i>
+              <i class="fa fa-retweet" style="width: 80px"></i>
+              <i class="fa fa-heart" style="width: 80px"></i>
+            </div>
+
+          </div>
+
+
+          <!-- 2nd chintan -->
+              <div class="tweetEntry">
+
+                <div class="tweetEntry-content">
+
+                  <a class="tweetEntry-account-group" href="[accountURL]">
+
+                    <img class="tweetEntry-avatar" src="momo_dp.jpg">
+
+                    <strong class="tweetEntry-fullname">
+                    Mimansha Gupta
+                    </strong>
+
+                    <span class="tweetEntry-username">
+                    @<b>_momo_</b>
+                    </span>
+
+                    <span class="tweetEntry-timestamp">- 4:53 PM</span>
+
+                  </a>
+
+                  <div class="tweetEntry-text-container">
+                    Thinking of the  good times we all have spent together in these two years makes me cherish those moments.May this bond of  friendship remains forever.
+                    <br>
+                    Happiest Born Day🎂,  Amrita...
+                  </div>
+
+                </div>
+
+                <div class="optionalMedia">
+                  <img class="optionalMedia-img" src="momo_msg.jpg">
+                </div>
+
+                <div class="tweetEntry-action-list" style="line-height:24px;color: #b1bbc3;">
+                  <i class="fa fa-reply" style="width: 80px;"></i>
+                  <i class="fa fa-retweet" style="width: 80px"></i>
+                  <i class="fa fa-heart" style="width: 80px"></i>
+                </div>
+
+              </div>
+          <!-- 2nd mimansha -->
+          <div class="tweetEntry">
+
+            <div class="tweetEntry-content">
+
+              <a class="tweetEntry-account-group" href="[accountURL]">
+
+                <img class="tweetEntry-avatar" src="gauri_dp.jpg">
+
+                <strong class="tweetEntry-fullname">
+                Gauri Godghase
+                </strong>
+
+                <span class="tweetEntry-username">
+                  @<b>_gauri_</b>
+                </span>
+
+                <span class="tweetEntry-timestamp">- 06:48 PM</span>
+
+              </a>
+
+              <div class="tweetEntry-text-container">
+                Happy Birthday Amrita.
+                <bt>
+                  There's literally no other person I've met who's sweeter than you. I don't know how I would've gotten through engineering without you. From all the group projects to bringing me printouts and saying ki ye file me daal dena, you've always been there for me. Thank you soo much. Stay the same caring, loving, helpful, adorable, naïve, sweet yet scary (only for some people), person you've always been. Really looking forward to you becoming my roommate. Love you soo much❤️❤️
+              </div>
+
+            </div>
+
+
+
+            <div class="tweetEntry-action-list" style="line-height:24px;color: #b1bbc3;">
+              <i class="fa fa-reply" style="width: 80px;"></i>
+              <i class="fa fa-retweet" style="width: 80px"></i>
+              <i class="fa fa-heart" style="width: 80px"></i>
+            </div>
+
+          </div>
+
+
+
+          <!-- Template Entry  aishwarya -->
+          <div class="tweetEntry">
+
+            <div class="tweetEntry-content">
+
+              <a class="tweetEntry-account-group" href="[userURL]">
+
+                <img class="tweetEntry-avatar" src="aishu_dp.jpg">
+
+                <strong class="tweetEntry-fullname">
+                Aishwarya Gautam
+                </strong>
+
+                <span class="tweetEntry-username">
+                  @<b>_aishu_</b>
+                </span>
+
+                <span class="tweetEntry-timestamp">- 9:47 pm</span>
+
+              </a>
+
+
+
+            </div>
+
+            <div class="optionalMedia" style="[displayMedia]">
+              <img class="optionalMedia-img" src="aishu.jpg">
+            </div>
+
+            <div class="tweetEntry-action-list" style="line-height:24px;color: #b1bbc3;">
+              <i class="fa fa-reply" style="width: 80px;"></i>
+              <i class="fa fa-retweet" style="width: 80px"></i>
+              <i class="fa fa-heart" style="width: 80px"></i>
+            </div>
+
+          </div>
+          <div class="tweetEntry">
+
+            <div class="tweetEntry-content">
+
+              <a class="tweetEntry-account-group" href="[accountURL]">
+
+                <img class="tweetEntry-avatar" src="divya_dp.jpg">
+
+                <strong class="tweetEntry-fullname">
+                Divya Gugale
+                </strong>
+
+                <span class="tweetEntry-username">
+                  @<b>_divya_</b>
+                </span>
+
+                <span class="tweetEntry-timestamp">- 9:08 PM</span>
+
+              </a>
+
+              <div class="tweetEntry-text-container">
+                Dear Ammu ,
+                <br>
+       pata nahin kahan se shuru karu but Tujhe Bata Do Ki agale 3-4 minute Tujhe Bor karne wali hu so if You just want to skip the boredom then please refer last para.Tuze bhi pata hum dono ko ek dusre ke baare mai achcha bolane mein kitna bahut Ajeeb lagta hai but kya karu tera bday hai yeh dukh bhi zhel leti hu bas tere liye....
+       Teri bohot yaad aati hai yaar...trust me( I know you will not🤪).
+       <br>
+       <br>
+       Kya pata yaar but muze hum tino ne bitaya Har Ek Din Yad Aata Hai Ham Kitni Masti karte the hostel mein...I really miss your unique way to wake up me and momo...pura see-saw khel lete the tu aur momo toh😂 tuze yaad hai wo din jab tuze 8:40pm exact 8:40 per yaad aaya tha ki Tujhe Nimbu Lane hai....and the way we jumped over the backgate and was running like homeless laughing out loud for no reason....and aise bohot kisse like warden se chupke mess mai shots mai aana...sukhdae se Nimbu / coffee Churana security guard ko patake endtime ke baad bhi walk karna was as an integral part of our life and you know it very well😜.
+       But You know what we share a very special bond. Because our sarcasm, complement's and taunting pampers each other.
+       You are my Doreamon who has everything I need... from love, care and support to assignments and writeups 🤭.
+       Thank you so much for making me always whenever I need someone for making me feel special when people try to let me down for making me smile by giving hundred reasons to be happy and making me believe that life can be a lot better.
+       I don't know whether you will stay by my side forever,
+       but you know what, you have given me, one of the best moments in life that I would hardly get from any other friend and just because of you things become so much easier ,even in my darkest time of life.
+       I know i'm being so senti but yeah thanks for everything dear and ammu i want to say that-
+       <br>
+       "not all people are selfish there someone some who are selfless and you are exactly one of them"😍.
+       <br>
+       Happy Birthday lady just wanted to say you that you are beautiful inside and out and one of the strongest person I know you don't let anyone get you down I always love to see that pretty smile on your face love you lots have a great day.
+       <br>
+       <br>
+       Happy birthday Beautiful🥰😘😍🥳🤩.
+              </div>
+
+            </div>
+
+            <div class="optionalMedia">
+              <img class="optionalMedia-img" src="divya.jpg">
+              <p> This image is enough to say how much we love each other....Love you Ammu ❤</p>
+            </div>
+
+            <div class="tweetEntry-action-list" style="line-height:24px;color: #b1bbc3;">
+              <i class="fa fa-reply" style="width: 80px;"></i>
+              <i class="fa fa-retweet" style="width: 80px"></i>
+              <i class="fa fa-heart" style="width: 80px"></i>
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+          <!--End of tweetHolder-->
+          </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
